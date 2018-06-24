@@ -22,13 +22,20 @@
     </header>
 
     <div class="body-container">
-        <textarea name="" id="htmlPanel" class="panel" cols="30" rows="10"></textarea>
-        <iframe src="" id="outPanel" class="panel" frameborder="0"></iframe>
+        <textarea name="" id="htmlPanel" class="panel">
+            <p id="par">Hello</p>
+        </textarea>
+        <textarea name="" id="cssPanel" class="panel hidden"></textarea>
+        <textarea name="" id="javascriptPanel" class="panel hidden">
+             document.getElementById('par').innerHTML = "Hello Ivan"
+        </textarea>
+        <iframe src="" id="outputPanel" class="panel" frameborder="0"></iframe>
     </div>
 
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript">
-        $("iframe").contents().find("html").html($('#htmlPanel').val());
+
+    
     </script>
 </body>
 </html>
